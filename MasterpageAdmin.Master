@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterpageAdmin.master.cs" Inherits="LimKaiYing.MasterpageAdmin" %>
+<%@ Register TagPrefix="uc" TagName="navBar" Src="~/UserControl/navBar.ascx" %>
+
+<!DOCTYPE html>
+
+<html>
+    <div id="container">
+<header runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheetAdmin.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</header>
+<body>
+ 
+    <form id="form1" runat="server">
+        <div>
+            
+                <uc:navBar ID="navBar" runat="server" />
+
+              <div class="maincontainer">
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+              </div>
+          
+        </div>
+
+
+        
+    </form>
+
+</body>
+       
+    </div>
+</html>

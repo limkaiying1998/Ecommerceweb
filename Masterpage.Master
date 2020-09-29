@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.Master.cs" Inherits="LimKaiYing.Site1" %>
+<%@ Register TagPrefix="uc" TagName="navBar" Src="~/UserControl/navBar.ascx" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+ 
+    <form id="form1" runat="server">
+        <div>
+            
+                <uc:navBar ID="navBar" runat="server" />
+
+              <div class="maincontainer">
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+              </div>
+          
+
+            <footer>
+            <div class="footer" id="footer">
+                <p>Contact us<br /><br />Phone: +353 (83) 361 8354<br />Email: techlabs@gmail.com</p>
+    
+                    <p><br />Copyrights &copy; 2019 TECH LABS. All rights reserved.</p>
+   
+                    <p>
+    	                Connect With Us<br /> <br />
+    		                <a href="#" target="_blank"><img src="Images/facebookicon.png" /></a>
+    		                <a href="#" target="_blank"><img src="Images/instaicon.png"/></a>
+    		                <a href="#" target="_blank"><img src="Images/twittericon.png"/></a>
+                    </p>
+            </div>
+                </footer>
+        </div>
+
+
+        
+    </form>
+
+</body>
+</html>
